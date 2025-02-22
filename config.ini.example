@@ -1,0 +1,15 @@
+[default]
+; Just a name for the session file
+identity      = anon
+; Api id from my.telegram.org
+api_id        = 00000000
+; Api hash from my.telegram.org
+api_hash      = b44683783998deae6406623e6b3d46af
+; Id of the channel to spy on
+channel_id    = mchs_mo
+; Id of your telegram account
+receipient_id = tg_user
+; A message about rocket alarm
+alarm_msg     = Ракетная опасность!
+; A message indicating the end of rocket alarm
+alarm_end_msg = Отбой ракетной опасности
