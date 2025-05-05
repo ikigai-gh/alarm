@@ -43,7 +43,7 @@ async def rocket_alarm(event):
 @client.on(events.NewMessage(chats=(config["default"]["channel"], ), pattern=lambda msg: MessagePatterns.ROCKET_ALARM_END.value in msg))
 async def rocket_alarm_end(event):
     logger.info(f"Received post that match pattern {MessagePatterns.ROCKET_ALARM_END} from {config['default']['channel']}")
-    await client.send_message(config["default"]["receipient_id"], config["default"]["alarm_msg_end"])
+    await client.send_message(config["default"]["receipient_id"], config["default"]["alarm_end_msg"])
 
 client.start()
 client.run_until_disconnected()
