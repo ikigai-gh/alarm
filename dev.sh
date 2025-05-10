@@ -4,4 +4,4 @@
 
 set -xe
 
-docker run --rm -e ENV=DEV --name alarm_dev alarm:0.1.0
+docker compose -f compose_dev.yaml up -d

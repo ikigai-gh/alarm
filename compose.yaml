@@ -1,0 +1,13 @@
+services:
+  alarm:
+    build: .
+    image: alarm:0.1.0
+    container_name: alarm
+    environment:
+      - ENV=PROD
+    configs:
+      - source: alarm_config
+        target: /alarm_app/config.ini
+configs:
+  alarm_config:
+    file: config.ini

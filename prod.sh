@@ -4,4 +4,4 @@
 
 set -xe
 
-docker run -d --name alarm alarm:0.1.0
+docker compose up -d
